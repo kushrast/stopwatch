@@ -14,6 +14,10 @@ function currentTime() {
 	dSec = updateTime(decaseconds);
 	document.getElementById("clock-main").innerText = hour + ":" + min + ":" + sec; /* adding time to the div */
 	document.getElementById("clock-ms").innerText = dSec;
+
+	document.getElementById("clock-h").innerText = hour + "h";
+	document.getElementById("clock-m").innerText = min + "m";
+	document.getElementById("clock-s").innerText = sec + "s";
 }
 
 function updateTime(k) {
@@ -36,14 +40,14 @@ function toggleTimer() {
 	if (!playing) {
 		startTimeMs = Date.now();
 		currTimeInterval = setInterval(currentTime, 10);
-		$("#toggle").html("Stop");
+		$(".toggle").html("Stop");
 	} else {
 		clearInterval(currTimeInterval);
 		previousTimeMs += differenceMs;
 		differenceMs = 0;
 		startTimeMs = Date.now();
 		currentTime();
-		$("#toggle").html("Start");
+		$(".toggle").html("Start");
 	}
 	playing = !playing;
 }
@@ -55,6 +59,5 @@ function resetTimer() {
 	currentTime();
 }
 
-$("#toggle").click(toggleTimer);
-$("#reset").click(resetTimer);
-
+$(document).on('click', '.toggle', toggleTimer);
+$(document).on('click', '.reset', resetTimer);

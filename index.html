@@ -1,21 +1,27 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
 		<div class="container">
-			<div class="clock">
+			<div class="clock-desktop">
 				<div class="clock-text">
 					<span id="clock-main">00:00:00</span><span id="clock-ms">00</span>
 				</div>
 				<div class="clock-control">
-					<button class="first-button button-inverted" id="toggle">Start</button>
-					<button class="button-empty" id="reset">Reset</button>
+					<button class="first-button button-inverted toggle">Start</button>
+					<button class="button-empty reset">Reset</button>
 				</div>
 			</div>
-		</div>
-
+			<div class="clock-mobile">
+				<span class="m-elem" id="clock-h">00h</span>
+				<span class="m-elem" id="clock-m">00m</span>
+				<span class="m-elem" id="clock-s">00s</span>
+				<button class="first-button button-inverted toggle">Start</button>
+				<button class="button-empty reset">Reset</button>
+			</div>
 		<script
 		  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="

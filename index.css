@@ -5,69 +5,118 @@
 	justify-content: center;
 }
 
-.clock {
-	padding-top: 60px;
-	padding-left: 7vw;
-	padding-right: 7vw;
-	padding-bottom: 60px;
-	border: 2px solid #F8F8F8;
-	border-radius: 40px;
-	box-shadow: 0px 15px 10px 8px #F8F8F8;
+.clock-desktop {
+	display: none;
 }
 
-#clock-main {
-	font-size: 10vw;
-	font-family: 'Roboto';
-	background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.clock-mobile {
+	display: none;
 }
 
-#clock-ms {
-	font-size: 3vw;
-	font-family: 'Roboto';
-	background: -webkit-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+@media all and (min-width: 767px){ 
+	.clock-desktop {
+		display: initial;
+		padding-top: 60px;
+		padding-left: 7vw;
+		padding-right: 7vw;
+		padding-bottom: 60px;
+		border: 2px solid #F8F8F8;
+		border-radius: 40px;
+		box-shadow: 0px 15px 10px 8px #F8F8F8;
+	}
+
+	#clock-main {
+		font-size: 10vw;
+		font-family: 'Roboto';
+		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#clock-ms {
+		font-size: 3vw;
+		font-family: 'Roboto';
+		background: -webkit-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.clock-control {
+		display: flex;
+		justify-content: center;
+	}
+
+	.first-button {
+	/*	margin-right: 10px
+	*/}
+
+	button {
+		cursor: hand;
+		font-size: 1vw;
+		font-family: 'Roboto';
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		border-radius: 15px;
+		border: 3px solid;
+		outline:none;  
+	}
+
+	.button-inverted {
+		background: -webkit-linear-gradient(left, #B356A9, #DE5370);
+		color: white;
+	}
+
+	.button-inverted:hover {
+		background: -webkit-linear-gradient(left, #a8519f, #bf4961);
+	}
+
+	.button-empty {
+		border: 0px;
+		background: -webkit-linear-gradient(left, #DE5370, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.button-empty:hover {
+	}
 }
 
-.clock-control {
-	display: flex;
-	justify-content: center;
-}
+@media screen and (max-width: 767px){ 
+	.container {
+		height: 100%;
+		display: flex;
+		align-items: start;
+		justify-content: center;
+	}
+	.clock-mobile {
+		display: initial;
+	}
 
-.first-button {
-/*	margin-right: 10px
-*/}
+	.m-elem {
+		text-align: right;
+		font-size: 18vw;
+		font-weight: bold;
+		font-family: 'Roboto';
+		display: flex;
+	}
 
-button {
-	cursor: hand;
-	font-size: 1vw;
-	font-family: 'Roboto';
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
-	border-radius: 15px;
-	border: 3px solid;
-	outline:none;  
-}
+	#clock-h {
+		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-.button-inverted {
-	background: -webkit-linear-gradient(left, #B356A9, #DE5370);
-	color: white;
-}
+	#clock-m {
+		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-.button-inverted:hover {
-	background: -webkit-linear-gradient(left, #a8519f, #bf4961);
-}
-
-.button-empty {
-	border: 0px;
-	background: -webkit-linear-gradient(left, #DE5370, #FF0F00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.button-empty:hover {
+	#clock-s {
+		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
