@@ -13,7 +13,7 @@
 	display: none;
 }
 
-@media all and (min-width: 767px){ 
+@media screen and (min-width: 767px){ 
 	.clock-desktop {
 		display: initial;
 		padding-top: 60px;
@@ -83,7 +83,7 @@
 	}
 }
 
-@media screen and (max-width: 767px){ 
+@media all and (max-width: 767px){ 
 	.container {
 		height: 100%;
 		display: flex;
