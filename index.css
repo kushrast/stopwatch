@@ -29,6 +29,9 @@
 		font-size: 10vw;
 		font-family: 'Roboto';
 		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -o-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -ms-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -moz-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -37,6 +40,9 @@
 		font-size: 3vw;
 		font-family: 'Roboto';
 		background: -webkit-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
+		background: -o-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
+		background: -ms-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
+		background: -moz-linear-gradient(left, #FF0F00, #ff4561, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -65,16 +71,25 @@
 
 	.button-inverted {
 		background: -webkit-linear-gradient(left, #B356A9, #DE5370);
+		background: -o-linear-gradient(left, #B356A9, #DE5370);
+		background: -ms-linear-gradient(left, #B356A9, #DE5370);
+		background: -moz-linear-gradient(left, #B356A9, #DE5370);
 		color: white;
 	}
 
 	.button-inverted:hover {
 		background: -webkit-linear-gradient(left, #a8519f, #bf4961);
+		background: -o-linear-gradient(left, #a8519f, #bf4961);
+		background: -ms-linear-gradient(left, #a8519f, #bf4961);
+		background: -moz-linear-gradient(left, #a8519f, #bf4961);
 	}
 
 	.button-empty {
 		border: 0px;
 		background: -webkit-linear-gradient(left, #DE5370, #FF0F00);
+		background: -o-linear-gradient(left, #DE5370, #FF0F00);
+		background: -ms-linear-gradient(left, #DE5370, #FF0F00);
+		background: -moz-linear-gradient(left, #DE5370, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -95,6 +110,10 @@
 	}
 
 	.m-elem {
+		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -o-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -ms-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
+		background: -moz-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
 		text-align: right;
 		font-size: 18vw;
 		font-weight: bold;
@@ -103,19 +122,16 @@
 	}
 
 	#clock-h {
-		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
 	#clock-m {
-		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
 	#clock-s {
-		background: -webkit-linear-gradient(left, #9E36A0, #D05E8D, #FF0F00);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
